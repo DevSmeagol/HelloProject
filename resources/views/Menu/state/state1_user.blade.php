@@ -90,7 +90,7 @@
                   </div>
                 </td>
                 <td class="stTd2">
-                  <input name="txtCarRegNo" type="text"  maxlength="50" id="txtCarRegNo" class="itemDtg" style="color:Black;width:144px;">&nbsp;
+                  <input name="carRegNo" type="text"  maxlength="50" id="carRegNo" class="itemDtg" style="color:Black;width:144px;">&nbsp;
                   <span id="Regex_txtCarRegNo" class="txtRegex" style="color:Red;display:none;">กรุณากรอก ทะเบียนรถ ให้ถูกต้อง
                   </span>
                   <span id="Rfv_txtCarRegNo" class="txtRegex" style="color:Red;display:none;">กรุณากรอก ทะเบียนรถ ให้ถูกต้อง
@@ -105,7 +105,7 @@
                   </div>
                 </td>
                 <td class="stTd4">
-                  <select name="drpCarProvinceId" id="drpCarProvinceId" class="itemDtg" style="width:114px;">
+                  <select name="carRegProvince" id="carRegProvince" class="itemDtg" style="width:114px;">
                     <option value="0">- เลือกจังหวัด -
                     </option>
                     <option value="1">กระบี่
@@ -281,14 +281,14 @@
                   </div>
                 </td>
                 <td>
-                  <input name="txtCType" type="text" id="txtCType" style="width: 144px;" maxlength="40" size="18" readonly="readonly">&nbsp;
-                  <div id="divSelvech" style="border-bottom-style: outset; text-align: center; border-right-style: outset;
+                  <input name="carType" type="text" id="carType" style="width: 144px;" maxlength="40" size="18" readonly="readonly">&nbsp;
+                  <!-- <div id="divSelvech" style="border-bottom-style: outset; text-align: center; border-right-style: outset; 
                                               background-color: #DCDCDC; width: 72px; display: inline; font-family: 'MS Reference Sans Serif';
                                               border-top-style: outset; height: 27px; font-size: 12px; vertical-align: baseline;
                                               border-left-style: outset; cursor: hand; font-weight: bold" onclick="showArea('frame_select');" ms_positioning="FlowLayout">
                     เลือกรุ่นรถ
-                  </div>
-                  &nbsp;
+                  </div>  -->
+                                    &nbsp;
                 </td>
                 <td>
                   <div align="left">
@@ -299,7 +299,7 @@
                   </div>
                 </td>
                 <td>
-                  <input name="txtCMFG" type="text" id="txtCMFG" maxlength="40" readonly="readonly">
+                  <input name="CMFG" type="text" id="CMFG" maxlength="40" readonly="readonly">
                 </td>
               </tr>
               <tr id="trNewSelVech2" valign="top" bgcolor="#f3f3f4">
@@ -312,31 +312,31 @@
                   </div>
                 </td>
                 <td oncontextmenu="false">
-                  <input name="txtCModel" type="text" id="txtCModel" maxlength="40" readonly="readonly">&nbsp;
+                  <input name="carModel" type="text" id="carModel" maxlength="40" readonly="readonly">&nbsp;
                   <font class="itemDtg">ปี
                   </font>&nbsp;
-                  <input name="txtDSTYear" type="text" id="txtDSTYear" style="width: 32px;" maxlength="8" size="1" readonly="readonly">
+                  <input name="carModel_Year" type="text" id="carModel_Year" style="width: 45px;" maxlength="8" size="1" readonly="readonly">
                   <span id="Rfv_txtCModel" class="txtRegex" style="color:Red;display:none;">
                   </span>
                 </td>
                 <td align="right">
-                  <div align="left">
+                  <!-- <div align="left">
                     <font class="itemDtg">แบบ
                       <font color="#ff0000">*
                       </font>
                     </font>
-                  </div>
+                  </div> -->
                 </td>
                 <td style="height: 29px">
-                  <input name="txtCVechTyp" type="text" id="txtCVechTyp" maxlength="40" style="width: 230px;" readonly="readonly">
+                  <!-- <input name="txtCVechTyp" type="text" id="txtCVechTyp" maxlength="40" style="width: 230px;" readonly="readonly">
                   <div style="border-bottom-style: outset; text-align: center; border-right-style: outset;
                               background-color: #DCDCDC; width: 40px; display: inline; font-family: 'MS Reference Sans Serif';
                               border-top-style: outset; height: 27px; font-size: 12px; vertical-align: baseline;
                               border-left-style: outset; cursor: hand; font-weight: bold" onclick="return showPic('frame_select',document.form1.hidCProjref.value)" ms_positioning="FlowLayout">
                     รูปรถ
-                  </div>
-                  <span id="Rfv_txtCVechTyp" class="txtRegex" style="color:Red;display:none;">กรุณาเลือก รุ่นรถ
-                  </span>
+                  </div> -->
+                  <!-- <span id="Rfv_txtCVechTyp" class="txtRegex" style="color:Red;display:none;">กรุณาเลือก รุ่นรถ
+                  </span> -->
                 </td>
               </tr>
               <tr>
@@ -357,8 +357,8 @@
                   </div>
                 </td>
                 <td>
-                  <input name="txtChassino" type="text" maxlength="50" id="txtChassino" class="itemDtg" style="width:130px;">/
-                  <input name="txtModelNo" type="text" maxlength="50" id="txtModelNo" class="itemDtg" style="width:100px;">
+                  <input name="Chassino" type="text" maxlength="50" id="Chassino" class="itemDtg" style="width:130px;">/
+                  <input name="ModelNo" type="text" maxlength="50" id="ModelNo" class="itemDtg" style="width:100px;">
                   <span id="Regex_txtChassino" class="txtRegex" style="color:Red;display:none;">กรุณากรอก หมายเลขตัวถัง
                   </span>
                   <span id="Rfv_txtChassino" class="txtRegex" style="color:Red;display:none;">กรุณากรอก หมายเลขตัวถัง
@@ -371,7 +371,7 @@
                   </div>
                 </td>
                 <td>
-                  <input name="txtEngineNo" type="text" maxlength="31" id="txtEngineNo" class="itemDtg">
+                  <input name="EngineNo" type="text" maxlength="31" id="EngineNo" class="itemDtg">
                 </td>
               </tr>
               <tr bgcolor="#f3f3f4">
@@ -382,7 +382,7 @@
                   </div>
                 </td>
                 <td>
-                  <input name="txtKM" type="text" maxlength="10" id="txtKM" class="itemDtg">
+                  <input name="KMCarRepair" type="text" maxlength="10" id="KMCarRepair" class="itemDtg">
                   <span id="Regex_txtKM" class="txtRegex" style="color:Red;display:none;">กรุณากรอกตัวเลขเท่านั้น
                   </span>
                 </td>
@@ -393,7 +393,7 @@
                   </div>
                 </td>
                 <td>
-                  <select name="DrpCarDescId" id="DrpCarDescId" class="itemDtg">
+                  <select name="CarDescId" id="CarDescId" class="itemDtg">
                     <option selected="selected" value="0">- สภาพรถ -
                     </option>
                     <option value="1">ขับเคลื่อนได้
@@ -411,7 +411,7 @@
                   </div>
                 </td>
                 <td>
-                  <select name="drpCCL_ID" id="drpCCL_ID" class="itemDtg" style="width:140px;">
+                  <select name="color_ID" id="color_ID" class="itemDtg" style="width:140px;">
                     <option selected="selected" value="0">- เลือกสี -
                     </option>
                     <option value="1">ขาว
@@ -523,7 +523,7 @@
                   </div>
                 </td>
                 <td>
-                  <select name="drpCptId" id="drpCptId" class="itemDtg" style="width:80px;">
+                  <select name="useColorType_Id" id="useColorType_Id" class="itemDtg" style="width:80px;">
                     <option value="">- สีที่พ่น -
                     </option>
                     <option value="3">มุก
@@ -547,7 +547,7 @@
                   </font>
                 </td>
                 <td>
-                  <select name="DrpCarIden" onchange="javascript:setTimeout('__doPostBack(\'DrpCarIden\',\'\')', 0)" id="DrpCarIden" class="itemDtg" style="width:100px;">
+                  <select name="CarIden" onchange="javascript:setTimeout('__doPostBack(\'DrpCarIden\',\'\')', 0)" id="CarIden" class="itemDtg" style="width:100px;">
                     <option selected="selected" value="">-ระบุ-
                     </option>
                     <option value="own">รถประกัน
@@ -557,7 +557,7 @@
                   </select>
                   <font class="itemDtg">คันที่
                   </font>&nbsp;
-                  <input name="txtCarIdenNo" type="text" maxlength="5" id="txtCarIdenNo" class="itemDtg" size="3">
+                  <input name="CarIdenNo" type="text" maxlength="5" id="CarIdenNo" class="itemDtg" size="3">
                   <span id="Rfv_DrpCarIden" class="txtRegex" style="color:Red;display:none;">กรุณาระบุ รถประกัน หรือ รถคู่กรณี
                   </span>
                   <span id="Regex_txtCarIdenNo" class="txtRegex" style="color:Red;display:none;">
@@ -574,12 +574,12 @@
                     <tbody>
                       <tr>
                         <td>
-                          <input name="txtDeduction" type="text" value="0.00" maxlength="10" id="txtDeduction" class="itemDtg" size="5" style="width:64px;">
+                          <input name="Deduction" type="text" value="0.00" maxlength="10" id="Deduction" class="itemDtg" size="5" style="width:64px;">
                           <font class="itemDtg">บาท
                           </font>
                         </td>
                         <td>
-                          <select name="DrpDeductionSrc" id="DrpDeductionSrc" style="width:200px;">
+                          <select name="DeductionSrc" id="DeductionSrc" style="width:200px;">
                             <option selected="selected" value="">-ระบุ-
                             </option>
                             <option value="ins">ประกันเรียกเก็บ - ไม่หักจากค่าซ่อม
@@ -628,7 +628,7 @@
                   </font>
                 </td>
                 <td align="left" class="stTd2T2">
-                  <select name="drpInsurerId" onchange="javascript:setTimeout('__doPostBack(\'drpInsurerId\',\'\')', 0)" id="drpInsurerId" class="itemDtg" style="width:180px;">
+                  <select name="InsurerId" onchange="javascript:setTimeout('__doPostBack(\'InsurerId\',\'\')', 0)" id="InsurerId" class="itemDtg" style="width:180px;">
                     <option value="822">
                     </option>
                   </select>
@@ -640,7 +640,7 @@
                   </font>
                 </td>
                 <td align="left" class="stTd4">
-                  <select name="drpInsurBrId" id="drpInsurBrId" style="width:180px;">
+                  <select name="InsurBrId" id="InsurBrId" style="width:180px;">
                     <option value="1343">Zone 2
                     </option>
                   </select>
@@ -652,7 +652,7 @@
                   </font>
                 </td>
                 <td>
-                  <input name="txtInsurBrPhone" type="text" maxlength="20" onchange="javascript:setTimeout('__doPostBack(\'txtInsurBrPhone\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="txtInsurBrPhone" class="itemDtg" style="color:Black;background-color:#E6E7E8;border-style:None;">
+                  <input name="InsurBrPhone" type="text" maxlength="20" onchange="javascript:setTimeout('__doPostBack(\'InsurBrPhone\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="InsurBrPhone" class="itemDtg" style="color:Black;background-color:#E6E7E8;border-style:None;">
                 </td>
                 <td>
                   <div align="left">
@@ -661,7 +661,7 @@
                   </div>
                 </td>
                 <td class="colCtr">
-                  <input name="txtInsurBrFax" type="text" maxlength="20" onchange="javascript:setTimeout('__doPostBack(\'txtInsurBrFax\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="txtInsurBrFax" class="itemDtg" style="background-color:#E6E7E8;border-style:None;">
+                  <input name="InsurBrFax" type="text" maxlength="20" onchange="javascript:setTimeout('__doPostBack(\'txtInsurBrFax\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="InsurBrFax" class="itemDtg" style="background-color:#E6E7E8;border-style:None;">
                 </td>
               </tr>
               <tr bgcolor="#f3f3f4" align="left">
@@ -670,7 +670,7 @@
                   </font>
                 </td>
                 <td>
-                  <input name="txtAccPolicyNo" type="text" maxlength="50" id="txtAccPolicyNo" class="itemDtg">
+                  <input name="accPolicyNo" type="text" maxlength="50" id="txtAccPolicyNo" class="itemDtg">
                   <span id="Regex_txtAccPolicyNo" class="txtRegex" style="color:Red;display:none;">กรุณากรอก หมายเลขกรมธรรม์ให้ถูกต้อง
                   </span>
                   <span id="Rfv_txtAccPolicyNo" class="txtRegex" style="color:Red;display:none;">กรุณากรอก หมายเลขกรมธรรม์ให้ถูกต้อง
@@ -683,7 +683,7 @@
                   </div>
                 </td>
                 <td class="colCtr">
-                  <select name="DrpPolicyTypeId" id="DrpPolicyTypeId" style="width:182px;">
+                  <select name="PolicyTypeId" id="PolicyTypeId" style="width:182px;">
                     <option selected="selected" value="0">- ประเภทกรมธรรม์ -
                     </option>
                     <option value="1">ประกันภัยชั้น 1
@@ -711,7 +711,7 @@
                     <!-- <tbody> -->
                       <!-- <tr> -->
                         <td>
-                          <input name="txtRefClaimNo" type="text" maxlength="20" id="txtRefClaimNo" tabindex="10" class="itemDtg" style="z-index: 0">
+                          <input name="claimNo" type="text" maxlength="20" id="claimNo" tabindex="10" class="itemDtg" style="z-index: 0">
                         </td>
                         <td>
                           <span id="Regex_txtRefClaimNo" class="txtRegex" style="color:Red;display:none;">กรุณากรอก เลขเคลมให้ถูกต้อง
@@ -730,7 +730,7 @@
                   </div>
                 </td>
                 <td class="colCtr">
-                  <input name="txtAccInsuredValue" type="text" value="0" maxlength="10" id="txtAccInsuredValue" class="itemDtg" style="width:120px;">
+                  <input name="AccInsuredValue" type="text" value="0" maxlength="10" id="AccInsuredValue" class="itemDtg" style="width:120px;">
                   <span id="Regex_txtAccInsuredValue" class="txtRegex" style="color:Red;display:none;">
                   </span>
                   <span id="Rfv_txtAccInsuredValue" class="txtRegex" style="color:Red;display:none;">
@@ -747,7 +747,7 @@
                   </div>
                 </td>
                 <td valign="top">
-                  <input name="txtAccClaimRefNo" type="text" maxlength="20" id="txtAccClaimRefNo" class="itemDtg">
+                  <input name="accClaimNo" type="text" maxlength="20" id="accClaimNo" class="itemDtg">
                   <span id="Regex_txtAccClaimRefNo" class="txtRegex" style="color:Red;display:none;">กรุณากรอก เลขรับแจ้งให้ถูกต้อง เช่น 123456/123
                   </span>
                   <span id="Rfv_txtAccClaimRefNo" class="txtRegex" style="color:Red;display:none;">กรุณากรอก เลขรับแจ้งให้ถูกต้อง เช่น 123456/123
@@ -762,7 +762,7 @@
                 <td class="colCtr">
                   <font face="Tahoma">
                   </font>
-                  <input name="wuCalAcc$txtCalendar" type="text" id="wuCalAcc_txtCalendar" maxlength="10" readonly="readonly" onblur="setCarlendarFormat('wuCalAcc_txtCalendar');">&nbsp;
+                  <input name="CallAcc_$Calendar" type="text" id="CallAcc_Calendar" maxlength="10" readonly="readonly" onblur="setCarlendarFormat('wuCalAcc_txtCalendar');">&nbsp;
                   <img src="Images/Calendar/calendar.gif" id="wuCalAcc_imgCalendar" style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; cursor: pointer;" name="imgCalendar" onclick="popUpCalendar(document.getElementById('wuCalAcc_txtCalendar'), document.getElementById('wuCalAcc_txtCalendar'), 78, 'dd/mm/yyyy', '');">
                   <span id="Rfv_wuCalAcc" class="txtRegex" style="color:Red;display:none;">
                   </span>
@@ -783,7 +783,7 @@
                   </div>
                 </td>
                 <td class="colCtr">
-                  <input name="wuCalOcc$txtCalendar" type="text" id="wuCalOcc_txtCalendar" maxlength="10" readonly="readonly" onblur="setCarlendarFormat('wuCalOcc_txtCalendar');">&nbsp;
+                  <input name="CallOcc_$Calendar" type="text" id="CallOcc_Calendar" maxlength="10" readonly="readonly" onblur="setCarlendarFormat('wuCalOcc_txtCalendar');">&nbsp;
                   <img src="Images/Calendar/calendar.gif" id="wuCalOcc_imgCalendar" style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; cursor: pointer;" name="imgCalendar" onclick="popUpCalendar(document.getElementById('wuCalOcc_txtCalendar'), document.getElementById('wuCalOcc_txtCalendar'), 78, 'dd/mm/yyyy', '');">
                   <span id="Rfv_wuCalOcc" class="txtRegex" style="color:Red;display:none;">
                   </span>
@@ -823,7 +823,7 @@
                   </font>
                 </td>
                 <td class="stTd2T2">
-                  <input name="txtDRIVER_NAME" type="text" maxlength="100" id="txtDRIVER_NAME" class="itemDtg" style="width:180px;">
+                  <input name="DRIVER_NAME" type="text" maxlength="100" id="DRIVER_NAME" class="itemDtg" style="width:180px;">
                   <span id="Regex_txtDRIVER_NAME" class="txtRegex" style="color:Red;display:none;">
                   </span>
                   <span id="Rfv_txtDRIVER_NAME" class="txtRegex" style="color:Red;display:none;">
@@ -834,7 +834,7 @@
                   </font>
                 </td>
                 <td class="stTd4">
-                  <input name="txtDRIVER_IDCARD" type="text" maxlength="20" id="txtDRIVER_IDCARD" class="itemDtg" size="30" style="width:180px;">
+                  <input name="DRIVER_IDCARD" type="text" maxlength="20" id="DRIVER_IDCARD" class="itemDtg" size="30" style="width:180px;">
                   <span id="Regex_txtDRIVER_IDCARD" class="txtRegex" style="color:Red;display:none;">
                   </span>
                   <span id="Rfv_txtDRIVER_IDCARD" class="txtRegex" style="color:Red;display:none;">
@@ -851,7 +851,7 @@
                   </div>
                 </td>
                 <td>
-                  <input name="txtDRIVER_PASSPORTNO" type="text" maxlength="15" id="txtDRIVER_PASSPORTNO" class="itemDtg" style="width:180px;">
+                  <input name="DRIVER_PASSPORTNO" type="text" maxlength="15" id="DRIVER_PASSPORTNO" class="itemDtg" style="width:180px;">
                   <span id="Regex_txtDRIVER_PASSPORTNO" class="txtRegex" style="color:Red;display:none;">
                   </span>
                   <span id="Rfv_txtDRIVER_PASSPORTNO" class="txtRegex" style="color:Red;display:none;">
@@ -864,7 +864,7 @@
                   </div>
                 </td>
                 <td class="colCtr">
-                  <input name="txtDRIVER_PHONE_NO" type="text" maxlength="10" id="txtDRIVER_PHONE_NO" class="itemDtg" size="30" style="width:180px;">
+                  <input name="DRIVER_PHONE_NO" type="text" maxlength="10" id="DRIVER_PHONE_NO" class="itemDtg" size="30" style="width:180px;">
                   <span id="Regex_txtDRIVER_PHONE_NO" class="txtRegex" style="color:Red;display:none;">
                   </span>
                   <span id="Rfv_txtDRIVER_PHONE_NO" class="txtRegex" style="color:Red;display:none;">
@@ -903,7 +903,7 @@
                   </div>
                 </td>
                 <td class="stTd2T2">
-                  <input name="wuCalContractDate$txtCalendar" type="text" id="wuCalContractDate_txtCalendar" maxlength="10" readonly="readonly" value="01/05/2561"  onblur="setCarlendarFormat('wuCalContractDate_txtCalendar');">&nbsp;
+                  <input name="contactDate$Calendar" type="text" id="contactDate" maxlength="10" readonly="readonly" value=""  onblur="setCarlendarFormat('wuCalContractDate_txtCalendar');">&nbsp;
                   <span id="Rfv_wuCalContractDate" class="txtRegex" style="color:Red;display:none;">
                   </span>
                 </td>
@@ -916,7 +916,7 @@
                   </div>
                 </td>
                 <td class="stTd4">
-                  <input name="txtAcknowledgeName" type="text" value="ศศกรณ์ ศักดากรกุล" maxlength="100" id="txtAcknowledgeName"  class="itemDtg" size="30">
+                  <input name="repContactname" type="text" value="" maxlength="100" id="repContactname"  class="itemDtg" size="30">
                 </td>
               </tr>
               <tr id="tg_r2" bgcolor="#f3f3f4">
@@ -929,7 +929,7 @@
                   </div>
                 </td>
                 <td>
-                  <input name="wuCalBringDate$txtCalendar" type="text" id="wuCalBringDate_txtCalendar" maxlength="10" readonly="readonly" value="01/05/2561"  onblur="setCarlendarFormat('wuCalBringDate_txtCalendar');">&nbsp;
+                  <input name="carRepairDate" type="text" id="carRepairDate" maxlength="10" readonly="readonly" value=""  onblur="setCarlendarFormat('wuCalBringDate_txtCalendar');">&nbsp;
                   <span id="Rfv_wuCalBringDate" class="txtRegex" style="color:Red;display:none;">
                   </span>
                 </td>
@@ -943,7 +943,7 @@
                 </td>
                 <td>
                   <font class="itemDtg">
-                    <input name="txtRepGetName" type="text" value="ศศกรณ์ ศักดากรกุล" maxlength="100" id="txtRepGetName"  class="itemDtg">
+                    <input name="RepGetName" type="text" value="" maxlength="100" id="RepGetName"  class="itemDtg">
                     <span id="Regex_txtRepGetName" class="txtRegex" style="color:Red;display:none;">
                     </span>
                     <span id="Rfv_txtRepGetName" class="txtRegex" style="color:Red;display:none;">
@@ -964,7 +964,7 @@
                 </td>
                 <td>
                   <font class="itemDtg">
-                    <input name="txtRepBringName" type="text" value="ๆไะๆไะ" maxlength="100" id="txtRepBringName"  class="itemDtg" style="width:180px;">
+                    <input name="clientNameCarRepair" type="text" value="" maxlength="100" id="clientNameCarRepair"  class="itemDtg" style="width:180px;">
                     <span id="Regex_txtRepBringName" class="txtRegex" style="color:Red;display:none;">
                     </span>
                     <span id="Rfv_txtRepBringName" class="txtRegex" style="color:Red;display:none;">
@@ -990,7 +990,7 @@
                 </td>
                 <td>
                   <font class="itemDtg">
-                    <input name="txtRepBringPhone" type="text" value="0832202897" maxlength="50" id="txtRepBringPhone"  class="itemDtg" style="width:180px;">&nbsp;
+                    <input name="clientTelContact" type="text" value="" maxlength="50" id="clientTelContact"  class="itemDtg" style="width:180px;">&nbsp;
                     <span id="Regex_txtRepBringPhone" class="txtRegex" style="color:Red;display:none;">
                     </span>
                     <span id="Rfv_txtRepBringPhone" class="txtRegex" style="color:Red;display:none;">
@@ -1023,7 +1023,7 @@
                 </td>
                 <td>
                   <font class="itemDtg">
-                    <input name="txtRepBringMobile" type="text" value="0832202897" maxlength="10" id="txtRepBringMobile"  class="itemDtg" style="width:180px;">
+                    <input name="clientMobileContact" type="text" value="" maxlength="10" id="clientMobileContact"  class="itemDtg" style="width:180px;">
                     <span id="Regex_txtRepBringMobile" class="txtRegex" style="color:Red;display:none;">
                     </span>
                     <span id="Rfv_txtRepBringMobile" class="txtRegex" style="color:Red;display:none;">
@@ -1046,7 +1046,7 @@
                   </div>
                 </td>
                 <td>
-                  <input name="wuCalEstimateGetcar$txtCalendar" type="text" id="wuCalEstimateGetcar_txtCalendar" maxlength="10" readonly="readonly" value="02/05/2561"  onblur="setCarlendarFormat('wuCalEstimateGetcar_txtCalendar');">&nbsp;
+                  <input name="hopeFinishDate_Calendar" type="text" id="hopeFinishDate_Calendar" maxlength="10" readonly="readonly" value=""  onblur="setCarlendarFormat('wuCalEstimateGetcar_txtCalendar');">&nbsp;
                   <span id="Rfv_wuCalEstimateGetcar" class="txtRegex" style="color:Red;display:none;">
                   </span>
                 </td>
@@ -1061,7 +1061,7 @@
                   </div>
                 </td>
                 <td>
-                  <input name="txtRepEstimateDays" type="text" value="0" maxlength="5" id="txtRepEstimateDays" class="itemDtg" size="30" style="width:136px;">
+                  <input name="RepEstimateDays" type="text" value="0" maxlength="5" id="RepEstimateDays" class="itemDtg" size="30" style="width:136px;">
                   <font class="itemDtg">&nbsp;วัน
                   </font>
                   <span id="Regex_txtRepEstimateDays" class="txtRegex" style="color:Red;display:none;">กรุณากรอก จำนวนวัน ที่คาดว่าจะซ่อมเสร็จ
@@ -1106,8 +1106,8 @@
                       *
                     </font>
                   </font>
-                  <table id="C1" class="itemDtg" cellspacing="0" cellpadding="0" title="Calendar" border="0" style="color:Black;background-color:White;border-color:#999999;border-width:1px;border-style:solid;height:150px;width:180px;border-collapse:collapse;">
-                    <tbody>
+                  <table id="hopeFinish" class="itemDtg" cellspacing="0" cellpadding="0" title="Calendar" border="0" style="color:Black;background-color:White;border-color:#999999;border-width:1px;border-style:solid;height:150px;width:180px;border-collapse:collapse;">
+                    <!-- <tbody>
                       <tr>
                         <td colspan="7" style="background-color:#999999;border-color:Black;">
                           <table class="itemDtg" cellspacing="0" border="0" style="color:Black;width:100%;border-collapse:collapse;">
@@ -1324,7 +1324,7 @@
                           </a>
                         </td>
                       </tr>
-                    </tbody>
+                    </tbody> -->
                   </table>
                   <input name="txtC1" type="text" maxlength="10" readonly="readonly" id="txtC1" style="background-color:#F3F3F4;border-style:None;width:1px;">
                   <span id="Rfv_txtC1" class="txtRegex" style="color:Red;display:none;">กรุณาระบุ วันที่คาดว่าจะซ่อมเสร็จ
@@ -1341,8 +1341,8 @@
                       </font>
                     </font>
                   </font>
-                  <table id="C2" class="itemDtg" cellspacing="0" cellpadding="0" title="Calendar" border="0" style="color:Black;background-color:White;border-color:#999999;border-width:1px;border-style:solid;height:150px;width:180px;border-collapse:collapse;">
-                    <tbody>
+                  <table id="hopeFinish_Fix" class="itemDtg" cellspacing="0" cellpadding="0" title="Calendar" border="0" style="color:Black;background-color:White;border-color:#999999;border-width:1px;border-style:solid;height:150px;width:180px;border-collapse:collapse;">
+                    <!-- <tbody>
                       <tr>
                         <td colspan="7" style="background-color:#999999;border-color:Black;">
                           <table class="itemDtg" cellspacing="0" border="0" style="color:Black;width:100%;border-collapse:collapse;">
@@ -1559,7 +1559,7 @@
                           </a>
                         </td>
                       </tr>
-                    </tbody>
+                    </tbody> -->
                   </table>
                   <input name="txtC2" type="text" readonly="readonly" id="txtC2" disabled="disabled" style="background-color:#F3F3F4;border-style:None;width:1px;">
                   <span id="Rfv_txtC2" class="txtRegex" style="color:Red;display:none;">
@@ -1577,7 +1577,7 @@
                 </td>
                 <td>
                   <font color="#999999">
-                    <input name="wuCalFinishDate$txtCalendar" type="text" id="wuCalFinishDate_txtCalendar" maxlength="10" readonly="readonly" onblur="setCarlendarFormat('wuCalFinishDate_txtCalendar');">&nbsp;
+                    <input name="completeDate_Calendar" type="text" id="completeDate_Calendar" maxlength="10" readonly="readonly" onblur="setCarlendarFormat('wuCalFinishDate_txtCalendar');">&nbsp;
                   </font>
                 </td>
                 <td>
@@ -1589,7 +1589,7 @@
                   </div>
                 </td>
                 <td>
-                  <input name="wuCalGetcarDate$txtCalendar" type="text" id="wuCalGetcarDate_txtCalendar" maxlength="10" readonly="readonly" onblur="setCarlendarFormat('wuCalGetcarDate_txtCalendar');">&nbsp;
+                  <input name="clientGetcardate" type="text" id="clientGetcardate" maxlength="10" readonly="readonly" onblur="setCarlendarFormat('wuCalGetcarDate_txtCalendar');">&nbsp;
                 </td>
               </tr>
               <tr id="tg_r9" bgcolor="#f3f3f4">
@@ -1606,7 +1606,7 @@
                 <td>
                   <b>
                     <font size="2">
-                      <input name="txtAssignName" type="text" maxlength="100" id="txtAssignName"  class="itemDtg" size="30">
+                      <input name="repNameGetCar" type="text" maxlength="100" id="repNameGetCar"  class="itemDtg" size="30">
                       <font color="#999999">
                       </font>
                     </font>
@@ -1623,7 +1623,7 @@
                 <td>
                   <b>
                     <font size="2">
-                      <input name="txtGetName" type="text" maxlength="100" id="txtGetName"  class="itemDtg" style="width:205px;">
+                      <input name="clientNameGetcar" type="text" maxlength="100" id="clientNameGetcar"  class="itemDtg" style="width:205px;">
                       <font color="#999999">
                       </font>
                     </font>
@@ -1642,7 +1642,7 @@
                 <td>
                   <b>
                     <font size="2">
-                      <input name="txtRelatedInsuree" type="text" maxlength="50" id="txtRelatedInsuree"  class="itemDtg" size="30">
+                      <input name="relation" type="text" maxlength="50" id="relation"  class="itemDtg" size="30">
                       <font color="#999999">
                       </font>
                     </font>
@@ -1662,7 +1662,7 @@
                 <td id="tdcar2">
                   <b>
                     <font class="itemDtg" color="#999999">
-                      <input name="txtRelatedInsureeIDCard" type="text" maxlength="13" id="txtRelatedInsureeIDCard"  class="itemDtg">
+                      <input name="clientIDCardGetcar" type="text" maxlength="13" id="clientIDCardGetcar"  class="itemDtg">
                     </font>
                   </b>
                 </td>
@@ -1683,7 +1683,7 @@
                 </td>
                 <td>
                   <font color="#999999">
-                    <input name="txtRelatedInsureePhone" type="text" maxlength="20" id="txtRelatedInsureePhone"  class="itemDtg" length="20">
+                    <input name="clientTelGetcar" type="text" maxlength="20" id="clientTelGetcar"  class="itemDtg" length="20">
                   </font>
                 </td>
                 <td id="tdcarpic">
