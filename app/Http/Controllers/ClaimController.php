@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TasksController extends Controller
+class ClaimController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,6 +14,7 @@ class TasksController extends Controller
     public function index()
     {
         //
+        
     }
 
     /**
@@ -24,9 +25,6 @@ class TasksController extends Controller
     public function create()
     {
         //
-        $formsx = DB::table('form')->insert(
-        ['firstName' => 'สมบัติ'],['lastName'=>'จอนนิล'],['idCard'=>'1103701617101'],['tel'=>'0832202897'],['address'=>'31/289 จังหวัด ปทุมธานี อำเภอ ลำลูกกา ตำบล ลาดสวาย ปณ.12150']);
-        return view('show_form',compact('forms'));
     }
 
     /**
@@ -49,8 +47,6 @@ class TasksController extends Controller
     public function show($id)
     {
         //
-        $forms = DB::table('form')->get();
-        return view('show_form',['form' => $forms]);
     }
 
     /**
@@ -73,7 +69,7 @@ class TasksController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // PATCH/tasks/id
+        //
     }
 
     /**
@@ -84,6 +80,6 @@ class TasksController extends Controller
      */
     public function destroy($id)
     {
-        // DELETE/tasks/id
+        //
     }
 }

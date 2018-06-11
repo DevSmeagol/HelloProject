@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-class TasksController extends Controller
+use App\Customer;
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,12 @@ class TasksController extends Controller
     public function index()
     {
         //
+        $users = Customer::all();
+        return view('user.index', compact('users'));
+        
+
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -24,9 +29,7 @@ class TasksController extends Controller
     public function create()
     {
         //
-        $formsx = DB::table('form')->insert(
-        ['firstName' => 'สมบัติ'],['lastName'=>'จอนนิล'],['idCard'=>'1103701617101'],['tel'=>'0832202897'],['address'=>'31/289 จังหวัด ปทุมธานี อำเภอ ลำลูกกา ตำบล ลาดสวาย ปณ.12150']);
-        return view('show_form',compact('forms'));
+         return view('user.create');
     }
 
     /**
@@ -46,11 +49,11 @@ class TasksController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Customer $user)
     {
         //
-        $forms = DB::table('form')->get();
-        return view('show_form',['form' => $forms]);
+        //$user = Customer::find($id);
+        return view('user.show', compact('user'));
     }
 
     /**
@@ -73,7 +76,7 @@ class TasksController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // PATCH/tasks/id
+        //
     }
 
     /**
@@ -84,6 +87,32 @@ class TasksController extends Controller
      */
     public function destroy($id)
     {
-        // DELETE/tasks/id
+        //
+    }
+    public function test()
+    {
+        //
+        
+        return view('user.create');
+        
+
+    }
+    public function testPost()
+    {
+        //
+        Customer::create(['firstName'=> request('Firstname'),'lastName'=> request('Lastname'),'idCard'=> request('Idcard'),'tel'=> request('Tel'),'idLine'=> request('Idline'),'address'=> request('Address')]);
+        // Customer::create(request(['Firstname','Lastname','Idcard','Tel','Idcard','Address'])); //null
+        // $post = new Customer;
+        // $post->firstName = request('Firstname');
+        // $post->lastName = request('Lastname');
+        // $post->idCard = request('Idcard');
+        // $post->tel = request('Tel');
+        // $post->idLine = request('Idline');
+        // $post->address = request('Address');
+
+        // $post->save();
+
+        return redirect('/users');
+
     }
 }

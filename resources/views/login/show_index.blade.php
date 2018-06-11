@@ -13,7 +13,7 @@
 @stop 
 @section('content')
 
-<a href="gotoIndex" class="btn btn-default" role="button" >กลับสู่หน้าหลัก</a>
+<a href="http://localhost:8000/index" class="btn btn-default" role="button" >กลับสู่หน้าหลัก</a>
 
 <div class="form-header">
     <h1>ข้อมูลงานซ่อม</h1>

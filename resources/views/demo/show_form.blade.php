@@ -17,7 +17,7 @@
 <table>
 <tr>
 	<div align="Center">
-    <a href="users/create1150" class="btn btn-primary" role="button">สร้างใบรับรถใหม่ </a>
+    <a href="User" class="btn btn-primary" role="button">สร้างใบรับรถใหม่ </a>
     <a href="#" class="btn btn-primary" role="button">Update สถานะรถลูกค้า</a>
 </div>
 </tr>
@@ -103,18 +103,16 @@
 	<th>ชื่อลูกค้า</th>
 </tr>
     
-    <?php foreach ($tasks as $task ): ?>
+    <?php foreach ($forms as $form ): ?>
         <tr>
-      <td>{{$task->created_at}}</td>
-        <td>{{$task->id}}</td>
-        <td><a href="/index/{{$createclaim->id}}">{{$task->claim_id}}</a></td>
-        <td>{{$task->accident_id}}</td>
-        <td>{{$task->car_id}}</td>
-        <td>{{$task->car_brand}}</td>
-        <td>{{$task->car_gen}}</td>
-        <td>{{$task->company}}</td>
-        <td>{{$task->state}}</td>
-        <td>{{$task->customer_name}}</td>
+      <td>{{$form->created_at}}</td>
+        <td>{{$form->id}}</td>
+        <td>{{$form->firstName}}</td>
+        <td>{{$form->lastName}}</td>
+        <td>{{$form->idCard}}</td>
+        <td>{{$form->tel}}</td>
+        <td>{{$form->address}}</td>
+      
 
     <?php endforeach; ?>
   </tr>

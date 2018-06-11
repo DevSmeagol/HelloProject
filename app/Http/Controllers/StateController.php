@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App;
 class StateController extends Controller
 {
     //
@@ -31,6 +31,10 @@ class StateController extends Controller
     // return view('login.index',compact('tasks'));
 
     // }
+    public function index(){
+        $users = App\Customer::all();
+        return view('user.index', compact('users'));
+    }
     public function getRedirect_Index(){
         return redirect('/index');
     }
